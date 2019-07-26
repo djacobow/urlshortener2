@@ -1,0 +1,180 @@
+body {
+    font-family: "Verdana", "Arial", "sans-serif";
+    background-color: #003e5a;
+}
+
+div.bannerdiv {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+table.bannertable {
+    width: 90%;
+    background-color: #003e5a;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.bannertable td {
+    vertical-align: top;
+}
+table.bannertable td.banner_right {
+    font-size: 125%;
+    padding-top: 20px;
+    padding: 20px;
+    text-align: right;
+}
+
+
+div.maindiv {
+    padding-top: 95px;
+    padding-bottom: 22px;
+}
+
+div.creatediv {
+    width: 90%;
+    background-color: #ffe0e0;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+table.createtable {
+    background-color: #ffd0d0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+input.copybox {
+   transition: opacity 0.2s linear;
+    font-size: 80%;
+}
+
+
+input[type=button] {
+    padding: 5px 5px;
+    font-weight: bold;
+}
+
+div.createresultdiv {
+    background-color: #e0e0ff;
+    padding: 10px;
+    display: none;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+table.resultstable {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #d0d0ff;
+    width: 100%;
+    padding: 20px;
+}
+table.resultstable td.fail {
+    text-align: center;
+    background-color: #ffa0a0;
+    color: #202020;
+}
+table.resultstable td.ok{
+    text-align: center;
+    color: green;
+}
+
+
+div.searchdiv {
+    background-color: #d0d0ff;
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+
+div.managediv {
+    background-color: #e0ffe0;
+    padding: 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+div.managelist {
+    background-color: #d0ffd0;
+    display: none;
+}
+
+table.onelinkinfo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    padding: 3px;
+    border: solid 1px;
+    font-size: 60%;
+}
+
+
+div.changediv {
+    transition: opacity 0.25s linear;
+    transition: height 0.25s linear;
+    z-index: 10;
+}
+div.changediv input[type=text] {
+    width: 80%;
+}
+span.openclosetri {
+}
+
+div.footerdiv {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+table.footertable {
+    width: 100%;
+    font-size: 80%;
+    background-color: #808080;
+    color:#e0e0e0;
+}
+
+
+
+
+
+
+
+table.oneListResult {
+    width: 100%;
+    font-size: 75%;
+    border-bottom: 1px solid black;
+    table-layout: fixed;
+}
+table.finalListResult {
+    width: 100%;
+    font-size: 75%;
+}
+td.listResultOwner {
+    word-wrap: break-word;
+    vertical-align: top;
+    width: 10%;
+}
+td.listResultURLs {
+    word-wrap: break-word;
+    vertical-align: top;
+    width: 65%;
+}
+td.listResultExtras {
+    vertical-align: top;
+    width: 25%;
+}
+td.heading {
+    font-weight: bold;
+

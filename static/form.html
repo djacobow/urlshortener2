@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>LBL Link Shortener</title>
+        <link rel="stylesheet" href="/us2/static/styles.css">
+    </head>
+    <body>
+        <div class="bannerdiv">
+            <table class="bannertable">
+                <tr>
+                    <td><img src="/us2/static/berkeleylab.png"></td>
+                    <td class="banner_right">Link Shortener</td>
+                </tr>
+            </table>
+        </div>
+        <div class="maindiv">
+            <div class="creatediv">
+                <table class="createtable">
+                    <tr>
+                        <td style="text-align: center;" colspan="2">Shorten a Link:</td>
+                    </tr>
+                    <tr>
+                        <td>Link to shorten:</td>
+                        <td><input type="text" id="url" size="80"></td>
+                    </tr>
+                    <tr>
+                        <td>Short name<br>(optional)</td>
+                        <td><input type="text" id="suggested_hash"></td>
+                    </tr>
+                    <tr>
+                        <td>Permissions</td>
+                        <td><select id="permissions">
+                                <option value="world" selected="selected">World</option>
+                                <option value="lbnl">LBNL Only (auth required)</option>
+                                <option value="private">Private to creator (auth required)</option>
+                            </select>
+                        </td>
+                    <tr>
+                        <td colspan="2" style="text-align: center;">
+                            <input type="button" id="doit" value="Shorten!">
+                        </td>
+                    </tr>
+                </table>
+    
+            </div>
+    
+            <div class="createresultdiv" id="createresultdiv">
+                <table class="resultstable">
+                    <tr>
+                        <td colspan="2" id="res_msg"></td>
+                    </tr>
+                    <tr>
+                        <td>Original Link:</td>
+                        <td id="res_orig_url"></td>
+                    </tr>
+                    <tr>
+                        <td>Shortened:</td>
+                        <td id="res_short_url"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <input type="button" id="closecreateresult" value="OK, got it">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+    
+            <br>
+            <div class="searchdiv">
+                <table width="100%">
+                    <tr>
+                        <td width="20%">Search existing links:</td>
+                        <td width="80%">
+                            <input size=80 id="search_for" class="search_for" type="text">
+                            <input type="button" id="submit_search" value="search">
+                            <label>
+                                <input type="checkbox" id="use_regex" value="use_regex">
+                                Use Regex
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+                <div id="searchresdiv">
+                </div>
+            </div>
+    
+            <br>
+            <div class="managediv">
+                <div id="usearch"></div>
+                <input id="loadmine" type="button" value="My Links">
+                <div class="managelist" id="managelist">
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="footerdiv">
+            <table class="footertable">
+                <tr>
+                    <td align="left" >This system for use by Berkeley Lab authorized personnel only.</td>
+                    <td align="right" id="user_greeting"></td>
+                </tr>
+            </table>
+        </div>
+        <div id="scriptdiv">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script src="/us2/static/helpers.js" type="text/javascript"></script>
+            <script src="/us2/static/submitter.js" type="text/javascript"></script>
+        </div>
+    </body>
+</html>
+    

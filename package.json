@@ -1,0 +1,28 @@
+{
+  "name": "us2",
+  "version": "1.0.0",
+  "description": "LBL Shibbolized URL shortener",
+  "main": "us_server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dgj@lbl.gov",
+  "license": "SEE LICENSE IN license.txt",
+  "dependencies": {
+    "async": "^2.6.1",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.3",
+    "fast-csv": "^2.5.0",
+    "lodash": "^4.17.10",
+    "minimist": "^1.2.0",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7",
+    "request": "^2.88.0",
+    "saml2-js": "^2.0.3",
+    "valid-url": "^1.0.9"
+  }
+}
