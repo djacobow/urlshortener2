@@ -7,12 +7,7 @@ a user's links. There is also an endpoint for deleting your own links.
 There is no update ability, but you can delete and recreate.
 
 Anyone can access a shortened link, but all the other endpoint are
-shibbolized through LBL's IDM.
-
-A simple companion server, `lu_server.js`, only allows link lookups.
-This can be run on a separate port and have nginx or whatever shunt
-regular lookups to it. It's optional, though, really only if you
-have some need to separate the public from semi-public processes.
+shibbolized through an institutions IDM.
 
 ## Motivation
 
@@ -31,8 +26,6 @@ here's a stab at it.
    ```json
    { "host": "localhost", "user": "us2_setter", "password": "xxxxxxxx" }
    ```
-
-   If you are using the lu_server, then you will need an `lu_creds.json` file as well.
 
 4. Edit `lib/config.js` as required (to match the hostname you will use, etc.
 
@@ -171,7 +164,7 @@ the user is invited to create the shortened link.
 
 ## Contributors
 
-Dave Jacobowitz (dgj@lbl.gov)
+Dave Jacobowitz
 
 ## License
 
