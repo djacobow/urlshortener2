@@ -12,7 +12,7 @@
   "author": "dgj@lbl.gov",
   "license": "SEE LICENSE IN license.txt",
   "dependencies": {
-    "async": "^2.6.1",
+    "async": "^3.2.2",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
     "express": "^4.16.3",
